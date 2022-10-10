@@ -19,4 +19,5 @@
 
 然后用cat命令，把q.json里面的所有图片链接(http链接)匹配+导入到img.txt文件里:   `cat q.json |tr '"' '\n' | tr "'" '\n' | grep -e '^https://' -e '^http://' -e'^//' | sort | uniq >> img.txt`
 
-最后用`wget -i img.txt`，把所有http链接图片下载到本地，方便离线使用。
+最后用`wget -i img.txt`，把所有http链接图片下载到本地，方便离线使用。也许我未来会用到这个题库做一个驾考的小程序玩玩。也许。
+https://anonfiles.com/Z5Y0RbB8y0/image.tar_gz
