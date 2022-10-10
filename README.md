@@ -12,7 +12,8 @@
 关于我的更新部分  
 
 个人有强迫症，这位朋友爬取的题库图片jpg部分链接后缀带着"jpg?imageslim"字样，看着十分难受。  
-比如"url": "http://app.static.public.chetailian.com//exam/subject1/2019_kemu1_806400.jpg?imageslim"。
+
+比如`url": "http://app.static.public.chetailian.com//exam/subject1/2019_kemu1_806400.jpg?imageslim"`
 
 用Linux的sed命令替换掉q.json里面的所有"?imageslim" :    `sed 's/?imageslim//' q.son`
 
