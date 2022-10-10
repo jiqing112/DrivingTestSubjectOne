@@ -15,7 +15,7 @@
 
 比如`url": "http://app.static.public.chetailian.com//exam/subject1/2019_kemu1_806400.jpg?imageslim"`
 
-用Linux的sed命令替换掉q.json里面的所有"?imageslim" :    `sed 's/?imageslim//' q.son`
+用Linux的sed命令替换掉q.json里面的所有"?imageslim" :    `sed 's/?imageslim//' q.json`
 
 然后用cat命令，把q.json里面的所有图片链接(http链接)匹配+导入到img.txt文件里:   `cat q.json |tr '"' '\n' | tr "'" '\n' | grep -e '^https://' -e '^http://' -e'^//' | sort | uniq >> img.txt`
 
